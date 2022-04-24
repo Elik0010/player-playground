@@ -1,0 +1,9 @@
+<div>
+    <div>
+        <ul *ngFor="let ticket of tickets">
+            <li>
+                <app-ticket [header]=ticket.header [bodyLines]=ticket.body></app-ticket>
+            </li>
+        </ul>
+    </div>
+</div>
