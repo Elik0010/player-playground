@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Entity } from './player/enities/entity';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'eva-first';
+  title: string = 'eva-first';
+  entities: {[entityId: string]: Entity;}= {};
 }

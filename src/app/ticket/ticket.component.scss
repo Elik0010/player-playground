@@ -1,0 +1,17 @@
+.ticket {
+    display: flex;
+    flex-flow: column;
+    border: 2px dotted black; ;
+    border-radius: 5px;
+}
+
+.ticket-title {
+    background-color: blue;
+    border-radius: 5px;
+    height: 20%
+    
+}
+
+.ticket-body {
+    height: 80%;
+}

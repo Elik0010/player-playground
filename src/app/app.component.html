@@ -1,6 +1,11 @@
-<div>
-  <span class="content">
-    <app-player></app-player>
-    <app-notifications></app-notifications>
-  </span>
+<div class="content">
+  <!-- <span class="content"> -->
+    <div id="player">
+    <app-player [(entities)]="entities"></app-player>
+  </div>
+    <div id="notifications">
+      <app-notifications [(entities)]="entities"></app-notifications>
+    </div>
+    <button class="ui primary button">press me</button>
+  <!-- </span> -->
 </div>

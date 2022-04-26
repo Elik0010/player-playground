@@ -31,7 +31,7 @@ export class Circle extends Entity{
 
     update(): void {
         this.move(this.x + this.directionX, this.y + this.directionY)
-        if(this.x + this.radius > 600 || this.x - this.radius < 0){ 
+        if(this.x + this.radius > 700 || this.x - this.radius < 0){ 
             this.directionX *= -1
         }
         if(this.y + this.radius >  400 || this.y - this.radius < 0){ 

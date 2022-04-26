@@ -7,6 +7,7 @@ export abstract class Entity {
     abstract y: number;
     abstract id: string;
     abstract color: string;
+    content: string[] = [];
     
     // create a new draw an instance of this entity
     abstract draw(): void;

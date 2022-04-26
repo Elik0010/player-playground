@@ -1,1 +1,5 @@
-<canvas (click)="onClick($event)" #videoAnnotator height="400" width="600"></canvas>
+<div class="player">
+    <video id="dv1" loop [autoplay]="true" height="400" width="700" class="video" autoplay src="http://www.w3schools.com/html/mov_bbb.mp4"></video>
+    <canvas id="videoAnnotator" #videoAnnotator (click)="onClick($event)"  height="400" width="700"></canvas>
+</div>
+

@@ -1,9 +1,9 @@
-<div>
+<div class="notifications-container">
     <div>
-        <ul *ngFor="let ticket of tickets">
-            <li>
-                <app-ticket [header]=ticket.header [bodyLines]=ticket.body></app-ticket>
-            </li>
-        </ul>
+        <div *ngFor="let item of entities | keyvalue">
+            <!-- <li> -->
+                <app-ticket class="notification-ticket" (selfDeleteEvent)="deleteEntity(item.key)" [header]=item.key [bodyLines]=item.value.content></app-ticket>
+            <!-- </li> -->
+            </div>
     </div>
 </div>

@@ -1,4 +1,16 @@
 .content {
-    display: inline-block;
+    display: flex;
+    flex-flow: row;
     white-space: nowrap;
+    width: 100%;
+}
+
+#player {
+    float: left;
+    flex: 0 1 auto;
+}
+
+#notifications {
+    width: 100%;
+    flex: 0 1 auto;
 }

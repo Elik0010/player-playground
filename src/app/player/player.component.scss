@@ -1,3 +1,21 @@
 :host {
     display: inline-block;
 }
+
+.player {
+    height: 400px;
+    width: 700px;
+}
+
+#dv1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#videoAnnotator {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,0,0,0.5);
+}
